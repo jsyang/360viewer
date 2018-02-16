@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "target": "es5",
+    "module": "es6",
+    "allowSyntheticDefaultImports": true,
+    "alwaysStrict": true,
+    "removeComments": true,
+    "moduleResolution": "node",
+    "allowJs": true,
+    "jsx": "react",
+    "lib": [
+      "es2017.object",
+      "es6",
+      "es7",
+      "dom"
+    ],
+    "noUnusedLocals": true,
+    "strictNullChecks": true
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

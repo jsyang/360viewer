@@ -1,0 +1,26 @@
+{
+  "name": "360viewer",
+  "version": "0.0.1",
+  "description": "360 viewer for the web",
+  "author": {
+    "name": "jsyang.ca@gmail.com",
+    "url": "http://jsyang.ca/360viewer"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jsyang/360viewer.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "build": "NODE_ENV=production webpack -p"
+  },
+  "dependencies": {
+    "three": "^0.90.0",
+    "ts-loader": "^3.5.0",
+    "typescript": "^2.7.2",
+    "uglifyjs-webpack-plugin": "^1.1.1",
+    "webpack": "^3.8.1",
+    "webpack-config-assign": "^1.0.0"
+  }
+}
