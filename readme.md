@@ -11,6 +11,8 @@ and then go to http://localhost:3000#URL_OF_IMAGE
 
 Should work cross domains as well.
 
+- Mobile gyroscope support not implemented yet.
+
 ## Example
 
 `http://jsyang.ca/360viewer/#https://i.imgur.com/iPhSNLL.jpg`
