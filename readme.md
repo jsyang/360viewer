@@ -10,3 +10,7 @@ yarn start
 and then go to http://localhost:3000#URL_OF_IMAGE
 
 Should work cross domains as well.
+
+## Example
+
+`http://jsyang.ca/360viewer/#https://i.imgur.com/iPhSNLL.jpg`
