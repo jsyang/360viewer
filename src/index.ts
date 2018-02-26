@@ -50,8 +50,9 @@ function init() {
     addEventListener('touchend', onMouseUp);
     addEventListener('mouseup', onMouseUp);
     addEventListener('wheel', onMouseWheel);
-
     addEventListener('resize', onResize);
+    addEventListener('keydown', onKeyDown);
+
 }
 
 function loadTexture() {
@@ -121,6 +122,31 @@ function onMouseWheel(event) {
     const fov  = camera.fov + event.deltaY * 0.05;
     camera.fov = THREEMath.clamp(fov, 10, 75);
     camera.updateProjectionMatrix();
+}
+
+function onKeyDown(event) {
+    const Key = {
+        LEFT:   37,
+        UP:     38,
+        RIGHT:  39,
+        DOWN:   40
+    };
+    const keycode  = event.keyCode || event.which;
+    const step = 3;
+    switch (keycode) {
+        case Key.LEFT:
+            lon -= step;
+        break;
+        case Key.UP:
+            lat += step;
+        break;
+        case Key.RIGHT:
+            lon += step;
+        break;
+        case Key.DOWN:
+            lat -= step;
+        break;
+    }
 }
 
 function animate() {
